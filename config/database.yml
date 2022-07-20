@@ -54,8 +54,8 @@ test:
 #
 production:
   <<: *default
-  database: bsale_test
-  username: 'bsale_test'
-  password: 'bsale_test'
+  database: heroku_3d443ba910e9729
+  username: bd08a006134290
+  password: 2fcfee85
   host: us-cdbr-east-06.cleardb.net
   
