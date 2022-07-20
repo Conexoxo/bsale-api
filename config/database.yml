@@ -54,6 +54,9 @@ test:
 #
 production:
   <<: *default
-  database: ejercicio_production
-  username: ejercicio
+  database: bsale_test
+  username: 'bsale_test'
+  password: 'bsale_test'
+  reconnect: true
+  host: mdb-test.c6vunyturrl6.us-west-1.rds.amazonaws.com
   password: <%= ENV["EJERCICIO_DATABASE_PASSWORD"] %>
