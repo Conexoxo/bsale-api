@@ -16,8 +16,8 @@ default: &default
   username: 'bsale_test'
   password: 'bsale_test'
   reconnect: true
-  # host: mdb-test.c6vunyturrl6.us-west-1.rds.amazonaws.com
-  host: localhost
+  host: mdb-test.c6vunyturrl6.us-west-1.rds.amazonaws.com
+  # host: localhost
   port: 3306
   socket: /run/mysqld/mysqld.sock
 
