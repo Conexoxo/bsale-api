@@ -16,14 +16,14 @@ default: &default
   username: 'bsale_test'
   password: 'bsale_test'
   reconnect: true
-  # host: mdb-test.c6vunyturrl6.us-west-1.rds.amazonaws.com
   host: localhost
-  port: 3306
-  socket: /run/mysqld/mysqld.sock
 
 development:
   <<: *default
   database: bsale_test
+  port: 3306
+  socket: /run/mysqld/mysqld.sock
+  # host: mdb-test.c6vunyturrl6.us-west-1.rds.amazonaws.com
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -54,6 +54,8 @@ test:
 #
 production:
   <<: *default
-  database: ejercicio_production
-  username: ejercicio
-  password: <%= ENV["EJERCICIO_DATABASE_PASSWORD"] %>
+  database: bsale_test
+  username: 'bsale_test'
+  password: 'bsale_test'
+  host: us-cdbr-east-06.cleardb.net
+  
